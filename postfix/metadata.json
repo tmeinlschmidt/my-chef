@@ -1,0 +1,147 @@
+{
+  "attributes": {
+    "postfix/internal_smtp": {
+      "default": "",
+      "type": "string",
+      "description": "internal smtp we relay to",
+      "multiple_values": false,
+      "display_name": "internal SMTP",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/myorigin": {
+      "default": "$myhostname",
+      "type": "string",
+      "description": "my origin",
+      "multiple_values": false,
+      "display_name": "my origin",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/enable_sasl": {
+      "default": "yes",
+      "type": "string",
+      "description": "(yes) to enable sasl",
+      "multiple_values": false,
+      "display_name": "enable sasl",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/smtp_password": {
+      "default": "",
+      "type": "string",
+      "description": "password",
+      "multiple_values": false,
+      "display_name": "password of SMTP AUTH",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/myhostname": {
+      "default": "fqdn",
+      "type": "string",
+      "description": "hostname",
+      "multiple_values": false,
+      "display_name": "my hostname",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/smtp_user": {
+      "default": "",
+      "type": "string",
+      "description": "username",
+      "multiple_values": false,
+      "display_name": "username of SMTP AUTH",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/enable_transport": {
+      "default": "yes",
+      "type": "string",
+      "description": "(YES) to enable internal mail transport",
+      "multiple_values": false,
+      "display_name": "enable transport",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/domain": {
+      "default": "",
+      "type": "string",
+      "description": "domain name we serve and delivery for",
+      "multiple_values": false,
+      "display_name": "domain name",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix/relay_host": {
+      "default": "",
+      "type": "string",
+      "description": "outside relay host",
+      "multiple_values": false,
+      "display_name": "relay host",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "postfix": {
+      "type": "hash",
+      "description": "Postfix core",
+      "multiple_values": false,
+      "display_name": "Postfix",
+      "recipes": [
+
+      ],
+      "required": false
+    }
+  },
+  "recommendations": {
+
+  },
+  "license": "Apache 2.0",
+  "maintainer_email": "tomas@meinlschmidt.com",
+  "suggestions": {
+
+  },
+  "dependencies": {
+
+  },
+  "conflicting": {
+
+  },
+  "name": "postfix",
+  "platforms": {
+
+  },
+  "description": "Installs/Configures postfix",
+  "version": "0.2.0",
+  "recipes": {
+    "postfix": "",
+    "postfix": "Installs postfix with smart_relay and SMTP AUTH (nocerts)"
+  },
+  "providing": {
+    "postfix": [
+
+    ]
+  },
+  "long_description": "= DESCRIPTION:\n\ninstall postfix\n+ relaying to internal smart host\n+ forwarding via auth smtp host\n\n= REQUIREMENTS:\n\n= ATTRIBUTES: \n\n= USAGE:\n\n",
+  "replacing": {
+
+  },
+  "maintainer": "tmeinlschmidt"
+}

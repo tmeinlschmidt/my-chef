@@ -1,0 +1,35 @@
+# common settings
+#
+myorigin = <%= @node[:postfix][:myorigin] %>
+smtp_banner = $myhostname ESMTP $mail_name
+biff = no
+append_dot_domain = no
+readme_directory = no
+myhostname = <%= @node[:postfix][:myorigin] %>
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+mydestination = <%= @node[:fqdn]%>, localhost.<%= @node[:domain]%>, localhost
+mynetworks = 127.0.0.0/8, [::ffff:127.0.0.0]/104 [::1]/128
+mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all
+unknown_local_recipient_reject_code = 500
+
+# outbound relaying
+relayhost = <%= @node[:postfix][:relay_host] || ""%>
+
+<% if @node[:postfix][:enable_transport] == "yes" -%>
+# internal routing
+transport_maps = hash:/etc/postfix/transport
+<% end -%>
+
+<% if @node[:postfix][:enable_sasl] == "yes" -%>
+# SASL support (AUTH SMTP)
+# always postmap sasl_passwd!
+#
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options =
+<% end -%>
+# use TLS
+smtp_tls_security_level = encrypt

@@ -1,0 +1,94 @@
+{
+  "attributes": {
+    "memcached/max_connections": {
+      "default": "1024",
+      "type": "string",
+      "description": "max connections allowed",
+      "multiple_values": false,
+      "display_name": "max connections",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "memcached": {
+      "type": "hash",
+      "description": "memcached core",
+      "multiple_values": false,
+      "display_name": "memcached",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "memcached/user": {
+      "default": "nobody",
+      "type": "string",
+      "description": "memcached runs as user",
+      "multiple_values": false,
+      "display_name": "user",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "memcached/port": {
+      "default": "11211",
+      "type": "string",
+      "description": "port used",
+      "multiple_values": false,
+      "display_name": "port",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "memcached/max_memory": {
+      "default": "256",
+      "type": "string",
+      "description": "max memory used",
+      "multiple_values": false,
+      "display_name": "max memory",
+      "recipes": [
+
+      ],
+      "required": false
+    }
+  },
+  "recommendations": {
+
+  },
+  "license": "Apache v2.0",
+  "maintainer_email": "tomas@meinlschmidt.com",
+  "suggestions": {
+
+  },
+  "dependencies": {
+    "runit": [
+
+    ]
+  },
+  "conflicting": {
+
+  },
+  "name": "memcached",
+  "platforms": {
+
+  },
+  "description": "Configures memcached (based on 37signals)",
+  "version": "0.1.0",
+  "recipes": {
+    "memcached": "installs memcached daemon",
+    "memcached": ""
+  },
+  "providing": {
+    "memcached": [
+
+    ]
+  },
+  "long_description": "",
+  "replacing": {
+
+  },
+  "maintainer": "tmeinlschmidt"
+}

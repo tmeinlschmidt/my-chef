@@ -1,0 +1,21 @@
+= DESCRIPTION:
+
+Installs Rails and contains Rails tuning parameters.
+
+= REQUIREMENTS:
+
+= ATTRIBUTES: 
+
+= USAGE:
+
+  include_recipe "apache2"
+  include_recipe "passenger"
+  include_recipe "rails"
+
+  # configure some webapp with apache/passenger
+  web_app "some_rails_app" do
+    docroot "/srv/some_rails_app/public"
+    template "some_rails_app.conf.erb"
+  end
+
+= LICENSE and AUTHOR:

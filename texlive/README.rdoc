@@ -1,0 +1,40 @@
+= DESCRIPTION:
+TeXlive installation to support TeX doc generation
+
+= REQUIREMENTS:
+packages:
+
+texlive
+tex-common
+texlive-latex-base-doc
+texlive-doc-base
+texlive-latex-recommended-doc
+texlive-humanities-doc
+texlive-pstricks-doc
+texlive-base-bin-doc
+texlive-pictures-doc
+texlive-latex-extra-doc
+texlive-fonts-recommended-doc
+texlive-lang-latin
+texlive-lang-german
+texlive-generic-recommended
+texlive-common
+texlive-lang-czechslovak
+texlive-plain-extra
+texlive-formats-extra
+texlive-lang-greek
+texlive-base
+texlive-generic-extra
+texlive-base-bin
+texlive-pictures
+texlive-extra-utils
+texlive-latex-recommended
+texlive-latex-base
+texlive-humanities
+texlive-fonts-recommended
+texlive-pstricks
+
+= ATTRIBUTES: 
+
+= USAGE:
+

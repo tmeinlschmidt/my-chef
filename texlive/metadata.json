@@ -1,0 +1,92 @@
+{
+  "attributes": {
+    "texlive/install_langs": {
+      "default": "yes",
+      "type": "string",
+      "description": "(YES) to install language support",
+      "multiple_values": false,
+      "display_name": "install languages support",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "texlive/install_extras": {
+      "default": "yes",
+      "type": "string",
+      "description": "(YES) to install extras",
+      "multiple_values": false,
+      "display_name": "install extras",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "texlive": {
+      "type": "hash",
+      "description": "TeXlive package",
+      "multiple_values": false,
+      "display_name": "TeXlive",
+      "recipes": [
+
+      ],
+      "required": false
+    },
+    "texlive/install_docs": {
+      "default": "no",
+      "type": "string",
+      "description": "(YES) to install docs",
+      "multiple_values": false,
+      "display_name": "install docs",
+      "recipes": [
+
+      ],
+      "required": false
+    }
+  },
+  "recommendations": {
+
+  },
+  "license": "Apache 2.0",
+  "maintainer_email": "tomas@meinlschmidt.com",
+  "suggestions": {
+
+  },
+  "dependencies": {
+
+  },
+  "conflicting": {
+
+  },
+  "name": "texlive",
+  "platforms": {
+
+  },
+  "description": "Installs/Configures texlive",
+  "version": "0.1.0",
+  "recipes": {
+    "texlive": "",
+    "texlive::extras": "",
+    "texlive::langs": "",
+    "texlive::docs": ""
+  },
+  "providing": {
+    "texlive::extras": [
+
+    ],
+    "texlive::langs": [
+
+    ],
+    "texlive::docs": [
+
+    ],
+    "texlive": [
+
+    ]
+  },
+  "long_description": "= DESCRIPTION:\nTeXlive installation to support TeX doc generation\n\n= REQUIREMENTS:\npackages:\n\ntexlive\ntex-common\ntexlive-latex-base-doc\ntexlive-doc-base\ntexlive-latex-recommended-doc\ntexlive-humanities-doc\ntexlive-pstricks-doc\ntexlive-base-bin-doc\ntexlive-pictures-doc\ntexlive-latex-extra-doc\ntexlive-fonts-recommended-doc\ntexlive-lang-latin\ntexlive-lang-german\ntexlive-generic-recommended\ntexlive-common\ntexlive-lang-czechslovak\ntexlive-plain-extra\ntexlive-formats-extra\ntexlive-lang-greek\ntexlive-base\ntexlive-generic-extra\ntexlive-base-bin\ntexlive-pictures\ntexlive-extra-utils\ntexlive-latex-recommended\ntexlive-latex-base\ntexlive-humanities\ntexlive-fonts-recommended\ntexlive-pstricks\n\n= ATTRIBUTES: \n\n= USAGE:\n\n",
+  "replacing": {
+
+  },
+  "maintainer": "tmeinlschmidt"
+}

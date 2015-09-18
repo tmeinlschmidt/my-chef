@@ -1,0 +1,12 @@
+= DESCRIPTION:
+
+install postfix
++ relaying to internal smart host
++ forwarding via auth smtp host
+
+= REQUIREMENTS:
+
+= ATTRIBUTES: 
+
+= USAGE:
+

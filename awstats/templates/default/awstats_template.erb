@@ -1,0 +1,192 @@
+# awstats configuration file
+# generate by CHEF, do NOT change
+
+LogFile="<%= @config[:log_file] %>"
+LogType=<%= @config[:log_type] %>"
+LogFormat=<%= @config[:log_format] %>
+LogSeparator="<%= @config[:log_separator] %>"
+SiteDomain="<%= @config[:site_domain] %>"
+HostAliases="<%= @config[:host_aliases] %>"
+DNSLookup=<%= @config[:dns_lookup] %>
+DirData="<%= @config[:dir_data] %>"
+DirCgi="<%= @config[:dir_cgi] %>"
+DirIcons="<%= @config[:dir_icons] %>"
+AllowToUpdateStatsFromBrowser=<%= @config[:allow_to_update_from_browser] %>
+AllowFullYearView=<%= @config[:allow_full_year_view] %>
+EnableLockForUpdate=<%= @config[:enable_lock_for_update] %>
+DNSStaticCacheFile="<%= @config[:dns_static_cache_file] %>"
+DNSLastUpdateCacheFile="<%= @config[:dns_last_update_cache_file] %>"
+SkipDNSLookupFor="<%= @config[:skip_dns_lookup_for] %>"
+AllowAccessFromWebToAuthenticatedUsersOnly=<%= @config[:allow_access_for_auth_users] %>
+AllowAccessFromWebToFollowingAuthenticatedUsers="<%= @config[:allow_access_for_following] %>"
+AllowAccessFromWebToFollowingIPAddresses="<%= @config[:allow_access_from_ip_addresses] %>"
+CreateDirDataIfNotExists=<%= @config[:create_dir_data_if_not_exists] %>
+BuildHistoryFormat=<%= @config[:build_history_format] %>
+BuildReportFormat=<%= @config[:build_report_format] %>
+SaveDatabaseFilesWithPermissionsForEveryone=<%= @config[:save_database_files_with_permissions_for_everyone] %>
+PurgeLogFile=<%= @config[:purge_log_file] %>
+ArchiveLogRecords=<%= @config[:archive_log_records] %>
+KeepBackupOfHistoricFiles=<%= @config[:keep_backup_of_historic_files] %>
+DefaultFile="<%= @config[:default_file] %>"
+SkipHosts="<%= @config[:skip_hosts] %>"
+SkipUserAgents="<%= @config[:skip_user_agents] %>"
+SkipFiles="<%= @config[:skip_files] %>"
+SkipReferrersBlackList="<%= @config[:skip_referrers_black_list] %>"
+OnlyHosts="<%= @config[:only_hosts] %>"
+OnlyUserAgents="<%= @config[:only_user_agents] %>"
+OnlyUsers="<%= @config[:only_users] %>"
+OnlyFiles="<%= @config[:only_files] %>"
+NotPageList="<%= @config[:not_page_list] %>"
+ValidHTTPCodes="<%= @config[:valid_http_codes] %>"
+ValidSMTPCodes="<%= @config[:valid_smtp_codes] %>"
+AuthenticatedUsersNotCaseSensitive=<%= @config[:authenticated_users_not_case_sensitive] %>
+URLNotCaseSensitive=<%= @config[:url_not_case_sensitive] %>
+URLWithAnchor=<%= @config[:url_with_anchor] %>
+URLQuerySeparators="<%= @config[:url_query_separators] %>"
+URLWithQuery=<%= @config[:url_with_query] %>
+URLWithQueryWithOnlyFollowingParameters="<%= @config[:url_with_query_with_only_following_parameters] %>"
+URLWithQueryWithoutFollowingParameters="<%= @config[:url_with_query_without_following_parameters] %>"
+URLReferrerWithQuery=<%= @config[:url_referrer_with_query] %>
+WarningMessages=<%= @config[:warning_messages] %>
+ErrorMessages="<%= @config[:error_messages] %>"
+DebugMessages=<%= @config[:debug_messages] %>
+NbOfLinesForCorruptedLog=<%= @config[:nb_of_lines_for_currupted_log] %>
+WrapperScript="<%= @config[:wrapper_script] %>"
+DecodeUA=<%= @config[:decode_ua] %>
+MiscTrackerUrl="<%= @config[:misc_tracker_url] %>"
+
+# optional parameters
+
+LevelForBrowserDetection=<%= @config[:level_for_browser_detection] %>
+LevelForOSDetection=<%= @config[:level_for_os_detection] %>
+LevelForRefererAnalyze=<%= @config[:level_for_referer_analyze] %>
+LevelForRobotsDetection=<%= @config[:level_for_robots_detection] %>
+LevelForSearchEnginesDetection=<%= @config[:level_for_search_engines_detection] %>
+LevelForKeywordsDetection=<%= @config[:level_for_keywords_detection] %>
+LevelForFileTypesDetection=<%= @config[:level_for_file_types_detection] %>
+LevelForWormsDetection=<%= @config[:level_for_worms_detection] %>
+
+UseFramesWhenCGI=<%= @config[:use_frames_when_cgi] %>
+DetailedReportsOnNewWindows=<%= @config[:detailed_reports_on_new_windows] %>
+Expires=<%= @config[:expires] %>
+MaxRowsInHTMLOutput=<%= @config[:max_rows_in_html_output] %>
+Lang="<%= @config[:lang] %>"
+DirLang="<%= @config[:dir_lang] %>"
+ShowMenu=<%= @config[:show_menu] %>
+ShowSummary=<%= @config[:show_summary] %>
+ShowMonthStats=<%= @config[:show_month_stats] %>
+ShowDaysOfMonthStats=<%= @config[:show_days_of_month_stats] %>
+ShowDaysOfWeekStats=<%= @config[:show_days_of_week_stats] %>
+ShowHoursStats=<%= @config[:show_hours_stats] %>
+ShowDomainsStats=<%= @config[:show_domains_stats] %>
+ShowHostsStats=<%= @config[:show_hosts_stats] %>
+ShowAuthenticatedUsers=<%= @config[:show_authenticated_users] %>
+ShowRobotsStats=<%= @config[:show_robots_stats] %>
+ShowWormsStats=<%= @config[:show_worms_stats] %>
+ShowEMailSenders=<%= @config[:show_email_senders] %>
+ShowEMailReceivers=<%= @config[:show_email_receivers] %>
+ShowSessionsStats=<%= @config[:show_sessions_stats] %>
+ShowPagesStats=<%= @config[:show_pages_stats] %>
+ShowFileTypesStats=<%= @config[:show_file_types_stats] %>
+ShowFileSizesStats=<%= @config[:show_file_sizes_stats] %>
+ShowOSStats=<%= @config[:show_os_stats] %>
+ShowBrowsersStats=<%= @config[:show_browsers_stats] %>
+ShowScreenSizeStats=<%= @config[:show_screen_size_stats] %>
+ShowOriginStats=<%= @config[:show_origin_stats] %>
+ShowKeyphrasesStats=<%= @config[:show_keyphrases_stats] %>
+ShowKeywordsStats=<%= @config[:show_keywords_stats] %>
+ShowMiscStats=<%= @config[:show_misc_stats] %>
+ShowHTTPErrorsStats=<%= @config[:show_http_errors_stats] %>
+ShowSMTPErrorsStats=<%= @config[:show_smtp_erors_stats] %>
+ShowClusterStats=<%= @config[:show_cluster_stats] %>
+
+AddDataArrayMonthStats=<%= @config[:add_data_array_month_stats] %>
+AddDataArrayShowDaysOfMonthStats=<%= @config[:add_data_array_show_days_of_month_stats] %>
+AddDataArrayShowDaysOfWeekStats=<%= @config[:add_data_array_show_days_of_week_stats] %>
+AddDataArrayShowHoursStats=<%= @config[:add_data_array_show_hours_stats] %>
+
+IncludeInternalLinksInOriginSection=<%= @config[:include_internal_links_in_origin_section] %>
+
+MaxNbOfDomain=<%= @config[:max_nb_of_domain] %>
+MinHitDomain=<%= @config[:min_hit_domain] %>
+MaxNbOfHostsShown=<%= @config[:max_nb_of_hosts_shown] %>
+MinHitHost=<%= @config[:min_hit_host] %>
+MaxNbOfLoginShown=<%= @config[:max_nb_of_login_shown] %>
+MinHitLogin=<%= @config[:min_hit_login] %>
+MaxNbOfRobotShown=<%= @config[:max_nb_of_robot_shown] %>
+MinHitRobot=<%= @config[:min_hit_robot] %>
+MaxNbOfPagesShown=<%= @config[:max_nb_of_pages_shown] %>
+MinHitFile=<%= @config[:min_hit_file] %>
+MaxNbOfOsShown=<%= @config[:max_nb_of_os_shown] %>
+MinHitOs=<%= @config[:min_hit_os] %>
+MaxNbOfBrowserShown=<%= @config[:max_nb_of_browser_shown] %>
+MinHitBrowser=<%= @config[:min_hit_browser] %>
+MaxNbOfScreenSizesShown=<%= @config[:max_nb_of_screen_sizes_shown] %>
+MinHitScreenSize=<%= @config[:min_hit_screen_size] %>
+MaxNbOfWindowSizesShown=<%= @config[:max_nb_of_window_sizes_shown] %>
+MinHitWindowSize=<%= @config[:min_hit_window_size] %>
+MaxNbOfRefererShown=<%= @config[:max_nb_of_referer_shown] %>
+MinHitRefer=<%= @config[:min_hit_refer] %>
+MaxNbOfKeyphrasesShown=<%= @config[:max_nb_of_keyphrases_shown] %>
+MinHitKeyphrase=<%= @config[:min_hit_keyphrase] %>
+MaxNbOfKeywordsShown=<%= @config[:max_nb_of_keywords_shown] %>
+MinHitKeyword=<%= @config[:min_hit_keyword] %>
+MaxNbOfEMailsShown=<%= @config[:max_nb_of_email_shown] %>
+MinHitEMail=<%= @config[:min_hit_email] %>
+
+FirstDayOfWeek=<%= @config[:first_day_of_week] %>
+
+ShowFlagLinks="<%= @config[:show_flag_links] %>"
+ShowLinksOnUrl=<%= @config[:show_link_on_url] %>
+UseHTTPSLinkForUrl="<%= @config[:use_https_link_for_url] %>"
+MaxLengthOfShownURL=<%= @config[:max_length_of_shown_url] %>
+HTMLHeadSection="<%= @config[:html_head_section] %>"
+HTMLEndSection="<%= @config[:html_end_section] %>"
+
+Logo="<%= @config[:logo] %>"
+LogoLink="<%= @config[:logo_link] %>"
+
+BarWidth=<%= @config[:bar_width] %>
+BarHeight=<%= @config[:bar_height] %>
+
+StyleSheet="<%= @config[:style_sheet] %>"
+
+# colors
+color_Background=<%= @config[:color_background] %>
+color_TableBGTitle=<%= @config[:color_table_bg_title] %>
+color_TableTitle=<%= @config[:color_table_title] %>
+color_TableBG=<%= @config[:color_table_bg] %>
+color_TableRowTitle=<%= @config[:color_table_row_title] %>
+color_TableBGRowTitle=<%= @config[:color_table_bg_row_title] %>
+color_tableBorder=<%= @config[:color_table_border] %>
+color_text=<%= @config[:color_text] %>
+color_textpercent=<%= @config[:color_textpercent] %>
+color_titletext=<%= @config[:color_titletext] %>
+color_weekend=<%= @config[:color_weekend] %>
+color_link=<%= @config[:color_link] %>
+color_hover=<%= @config[:color_hover] %>
+color_u=<%= @config[:color_u] %>
+color_v=<%= @config[:color_v] %>
+color_p=<%= @config[:color_p] %>
+color_h=<%= @config[:color_h] %>
+color_k=<%= @config[:color_k] %>
+color_s=<%= @config[:color_s] %>
+color_e=<%= @config[:color_e] %>
+color_x=<%= @config[:color_x] %>
+
+# plugins
+<% if @config[:plugins] %>
+  <% @config[:plugins].each do |plugin| %>
+LoadPlugin "<%= plugin %>"
+  <% end %>
+<% end %>
+
+# extra sections
+ExtraTrackedRowsLimit=<%= @config[:extra_tracked_rows_limit] %>
+
+# includes
+<% if @config[:includes] %>
+  <% @config[:includes].each do |inc| %>
+Include "<%= inc %>"
+  <% end %>
+<% end %>
